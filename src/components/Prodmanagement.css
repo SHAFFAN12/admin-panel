@@ -1,0 +1,152 @@
+.swal2-input{
+    margin: 1rem;
+
+justify-content: center;
+}
+#swal-input1{
+    margin-inline: 3rem;
+}#swal-input2{
+     
+    margin-inline: 3rem;
+}
+#swal-input3{
+    margin-right: 4px;
+    padding: 1rem;
+}
+.data {
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+} 
+
+
+.product-heading{
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+    font-size: 2rem;
+    margin: 0px auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f2f2f2;
+    
+  }
+  .product-heading::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: aqua;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+  }
+  .product-heading:hover::after{
+    transform: scaleX(1);
+  }
+
+  .paragraph{
+    color: #f2f2f2;
+    font-size: 20px;
+    margin-top: 3px;
+  }
+
+table {
+border-collapse: collapse;
+width: 50rem;
+margin-top: 30px;
+}
+
+th, td {
+border: 1px solid black;
+padding: 1rem;
+
+}
+
+th {
+background-color: #f2f2f2;
+}
+tbody{
+    color: #f2f2f2;
+}
+
+
+
+.center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+}
+.outer{
+    position: relative;
+    margin: 0 50px;
+    background: #111;
+}
+.Button{
+ height: 70px;
+ width: 220px;
+ border-radius: 50px;
+
+}
+
+.outer Button, .outer span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outer Button{
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.Button Button{
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+
+}
+.Button span{
+    border-radius: 50px;
+}
+
+.outer:hover span:nth-child(1){
+    filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+    filter: blur(14px);
+}
+
+.outer:hover{
+    animation: rotate 1.5s linear infinite;
+    background:linear-gradient(#14ffe9,#14ffeb39,#ff00e0); 
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
